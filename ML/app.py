@@ -32,7 +32,7 @@ def predict():
     else:
         result = "Low Risk"
     
-    return render_template('result.html', result=result)
+    return render_template('results.html', result=result)
 
 if __name__ == '_main_':
     app.run(debug=True)
