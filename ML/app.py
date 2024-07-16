@@ -22,7 +22,7 @@ def predict():
     heart_rate = float(request.form['HeartRate'])
     
     # Create input array
-    input_data = np.array([[age, systolic_bp, diastolic_bp, bs, body_temp, heart_rate]])
+    input_data = np.array([[Age, systolic_bp, diastolic_bp, bs, body_temp, heart_rate]])
     
     # Predict
     prediction = model.predict(input_data)
